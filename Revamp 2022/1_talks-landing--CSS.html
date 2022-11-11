@@ -1,0 +1,166 @@
+<style type="text/css">
+    	:root {
+		--92nyblue: #8eaae2;
+		--92nygreen: #21805e;
+		--92nypink: #edabba;
+		--92nymagenta: #990d61;
+		--92nyred: #ff5447;
+	}
+
+    h1.ff-display {
+        font-size: 2.25rem;
+    }
+
+    .talks-wrapper p {
+        font-size: 1.125rem;
+    }
+
+
+
+    .u-txt-uppercase {
+        text-transform: uppercase;
+    }
+
+    .u-tone-background-custom {
+        background-color: var(--92nymagenta);
+        color: #fff;
+    }
+
+     .u-tone-background-custom .btn {
+        background-color: var(--92nypink);
+        color: #000;
+        border: 1px #fff solid;
+     }
+
+     .u-tone-background-custom .btn:hover {
+        background-color: #fff;
+        border: 1px var(--92nypink) solid;
+     }
+
+     .ms-hero__body {
+        text-align: left;
+     }
+
+     #talks-previous .btn {
+        background-color: #fff;
+        border: 1px #000 solid;
+        color: #000;
+     }
+
+     #talks-previous .btn:hover {
+        background-color: var(--92nygreen);
+        border: 1px var(--92nygreen) solid;
+        color: #fff;
+     }
+
+     #talks-more {
+        position: relative;
+        z-index: 3;
+     }
+
+     #talks-guest {
+        position: relative;
+        color: #fff;
+     }
+     
+     #talks-guest:before {
+        content: "";
+        width: 10vw;
+        height: 10vw;
+        background-color: #990d61;
+        top: -79px;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 2;
+        left: 44vw;
+    }
+
+    #talks-guest .emphasis {
+        color: var(--92nypink);
+    }
+
+    #talks-guest .btn {
+        border: 1px #fff solid;
+        background-color: transparent;
+        color: #fff;
+    }
+     
+
+
+    /* START STYLING FOR HOMEPAGE GRID TILE */
+    #talks-announced .program-card {
+        background-color: #000;
+    }
+
+    #talks-announced .program-card .program-card__actions .btn {
+        background-color: #000;
+        border: 1px solid #fff;
+        color: #fff;
+     }
+     
+     #talks-announced .program-card:hover .program-card__actions .btn {
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+     }
+
+    #talks-announced .program-card__title,
+    #talks-announced .program-card__title a,
+    #talks-announced .program-card__body {
+        color: #fff;
+    }
+
+    .program-card__media {
+        width: 100%;
+    }
+
+        @media (min-width: 50em) {
+            h1.ff-display {
+                font-size: 4rem;
+    }
+            
+            .talks-wrapper p {
+                font-size: 2rem;
+            }
+            
+            #talks-announced .program-card:not(.program-card--featured) {
+                flex-direction: row;
+            }
+            
+            #talks-announced .program-card:not(.program-card--featured) .program-card__details {
+                flex: none;
+            }
+
+            #talks-announced .program-card__actions {
+                visibility: unset;
+            }
+
+            #talks-announced .program-card__prefix {
+                font-size: 1rem;
+            }
+
+            #talks-announced .program-card__title {
+                font-size: 2.25rem;
+            }
+
+            #talks-announced .program-card__title.program-card__title--long {
+                font-size: 1.75rem;
+            }
+
+            #talks-announced .program-card__date-description {
+                font-size: 1.125rem;
+            }
+
+            #talks-announced .btn {
+                font-size: 1.125rem;
+            }
+         }
+
+            
+
+    /* END STYLING FOR HOMEPAGE GRID TILE */
+
+
+
+    
+</style>
