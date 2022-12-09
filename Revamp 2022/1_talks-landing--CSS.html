@@ -7,8 +7,17 @@
 		--92nyred: #ff5447;
 	}
 
-    h1.ff-display {
+    h1 {
+        font-weight: 400;
+        line-height: .9;
+    }
+
+    h1.u-txt-xl {
         font-size: 2.25rem;
+    }
+
+    h1.u-txt-xxl {
+        font-size: 2rem;
     }
 
     .talks-wrapper p {
@@ -39,7 +48,9 @@
 
      .ms-hero__body {
         text-align: left;
+        margin: 4em 2em;
      }
+
 
      #talks-previous .btn {
         background-color: #fff;
@@ -56,6 +67,10 @@
      #talks-more {
         position: relative;
         z-index: 3;
+     }
+
+     #talks-guest .o-grid {
+        align-items: center;
      }
 
      #talks-guest {
@@ -84,6 +99,10 @@
         background-color: transparent;
         color: #fff;
     }
+
+    
+
+    
      
 
 
@@ -114,10 +133,18 @@
         width: 100%;
     }
 
+    /* END STYLING FOR HOMEPAGE GRID TILE */
+
+    
+
         @media (min-width: 50em) {
-            h1.ff-display {
+            h1.u-txt-xl {
+                font-size: .rem;
+            }
+
+            h1.u-txt-xxl {
                 font-size: 4rem;
-    }
+            }
             
             .talks-wrapper p {
                 font-size: 2rem;
@@ -154,7 +181,26 @@
             #talks-announced .btn {
                 font-size: 1.125rem;
             }
+
+            #talks-guest .o-grid--2up li:nth-child(1) {
+                margin-right: 10%;
+            }
+
+            #talks-guest .o-grid--2up li:nth-child(2) {
+                width: calc(40% - 10px);
+            }
          }
+
+         @media (min-width: 70em) {
+            h1.u-txt-xl {
+                font-size: 5rem;
+            }
+
+            h1.u-txt-xxl {
+                font-size: 5.5rem;
+            }
+        }
+
 
             
 
