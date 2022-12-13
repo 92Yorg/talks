@@ -24,10 +24,18 @@
         font-size: 1.125rem;
     }
 
-
-
     .u-txt-uppercase {
         text-transform: uppercase;
+    }
+
+    #talks-intro .btn {
+        background-color: var(--92nymagenta);
+        border: 2px var(--92nymagenta) solid;
+    }
+
+    #talks-intro .btn:hover {
+        background-color: #000;
+        border-color: #000;
     }
 
     .u-tone-background-custom {
@@ -38,12 +46,11 @@
      .u-tone-background-custom .btn {
         background-color: var(--92nypink);
         color: #000;
-        border: 1px #fff solid;
+        border: 2px #fff solid;
      }
 
      .u-tone-background-custom .btn:hover {
         background-color: #fff;
-        border: 1px var(--92nypink) solid;
      }
 
      .ms-hero__body {
@@ -60,13 +67,13 @@
 
      #talks-previous .btn {
         background-color: #fff;
-        border: 1px #000 solid;
+        border: 2px #000 solid;
         color: #000;
      }
 
      #talks-previous .btn:hover {
-        background-color: var(--92nygreen);
-        border: 1px var(--92nygreen) solid;
+        background-color: var(--92nymagenta);
+        border-color: var(--92nymagenta);
         color: #fff;
      }
 
@@ -106,9 +113,14 @@
     }
 
     #talks-guest .btn {
-        border: 1px #fff solid;
+        border: 2px #fff solid;
         background-color: transparent;
         color: #fff;
+    }
+    
+    #talks-guest .btn:hover {
+        background-color: #fff;
+        color: #000;
     }
 
     
@@ -123,16 +135,20 @@
     }
 
     #talks-announced .program-card .program-card__actions .btn {
-        background-color: #000;
-        border: 1px solid #fff;
+        border: 2px solid #fff;
+        padding: 16px 32px;
+        border-radius: 20px;
         color: #fff;
-     }
-     
-     #talks-announced .program-card:hover .program-card__actions .btn {
-        background-color: #fff;
-        border: 1px solid #000;
+    }
+
+    #talks-announced .program-card:hover .program-card__actions .btn {
+        background-color: inherit;
+    }
+
+    #talks-announced .program-card .program-card__actions .btn:hover {
         color: #000;
-     }
+        background-color: #fff;
+    }
 
     #talks-announced .program-card__title,
     #talks-announced .program-card__title a,
@@ -186,10 +202,6 @@
             }
 
             #talks-announced .program-card__date-description {
-                font-size: 1.125rem;
-            }
-
-            #talks-announced .btn {
                 font-size: 1.125rem;
             }
 
