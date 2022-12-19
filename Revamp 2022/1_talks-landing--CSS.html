@@ -167,11 +167,16 @@
 
     /* END STYLING FOR HOMEPAGE GRID TILE */
 
-    
+        @media (min-width: 30em) and (max-width: 49.99em) {
+            #talks-guest .o-grid--2up li:nth-child(1) {
+                margin-right: 10%;
+                width: calc(40% - 12px)
+            }
+        }
 
         @media (min-width: 50em) {
             h1.u-txt-xl {
-                font-size: .99rem;
+                font-size: 3.5rem;
             }
 
             h1.u-txt-xxl {
