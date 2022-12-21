@@ -28,16 +28,56 @@
 	<section class="page-slice u-tone-background-dark page-layout" id="talks-announced">
 		<div class="u-constrained u-constrained--narrow">
 			<h1 class="u-txt-uppercase">Just announced</h1>
-			<object codetype="CMSInlineControl" style="display: none" type="widget">
-				<param name="name" value="HomepageGrid_Widget" />
-				<param name="visible" value="True" />
-				<param name="hideonsubpages" value="False" />
-				<param name="matchcmstreeorder" value="False" />
-				<param name="aliaspath" value="%2f92YOrg%2fExplore%2fTalks%2ftalks-just-announced%2525" />
-				<param name="widget_displayname" value="Homepage+Grid" />
-				<param name="width" value="" />
-				<param name="height" value="" />
-			</object>
+
+			<div class="event-slider">
+			
+				<ul id="upcoming-events" class="event-slider__inner js-slider-container" data-slides-per-view="1" data-slider-speed="400">
+			
+					<li class="js-slider-panel">
+						<object codetype="CMSInlineControl" style="display: none" type="widget">
+							<param name="name" value="HomepageGrid_Widget" />
+							<param name="visible" value="True" />
+							<param name="hideonsubpages" value="False" />
+							<param name="matchcmstreeorder" value="False" />
+							<param name="aliaspath" value="%2f92YOrg%2fExplore%2fTalks%2ftalks-just-announced%2525" />
+							<param name="widget_displayname" value="Homepage+Grid" />
+							<param name="width" value="" />
+							<param name="height" value="" />
+						</object>
+					</li>
+
+					<li class="js-slider-panel">
+						<object codetype="CMSInlineControl" style="display: none" type="widget">
+							<param name="name" value="HomepageGrid_Widget" />
+							<param name="visible" value="True" />
+							<param name="hideonsubpages" value="False" />
+							<param name="matchcmstreeorder" value="False" />
+							<param name="aliaspath" value="%2f92YOrg%2fExplore%2fTalks%2ftalks-just-announced%2525" />
+							<param name="widget_displayname" value="Homepage+Grid" />
+							<param name="width" value="" />
+							<param name="height" value="" />
+						</object>
+					</li>
+
+					<li class="js-slider-panel">
+						<object codetype="CMSInlineControl" style="display: none" type="widget">
+							<param name="name" value="HomepageGrid_Widget" />
+							<param name="visible" value="True" />
+							<param name="hideonsubpages" value="False" />
+							<param name="matchcmstreeorder" value="False" />
+							<param name="aliaspath" value="%2f92YOrg%2fExplore%2fTalks%2ftalks-just-announced%2525" />
+							<param name="widget_displayname" value="Homepage+Grid" />
+							<param name="width" value="" />
+							<param name="height" value="" />
+						</object>
+					</li>
+			
+					<div class="swiper-pagination"></div>
+			
+				</ul>
+			
+			</div>
+
 		</div>
 	</section>
 
@@ -92,7 +132,7 @@
 </section> -->
 
 	<div class="has-image ms-hero ms-hero--deep" id="talks-guest" style="
-			background-image: url(/92StreetY/media/img/Institutional/General/Hero/empty-stage.jpg);
+			background-image: url(/92StreetY/media/img/Talks/92ny-talks-stage-chairs.jpg); background-position: bottom;
 		">
 		<div class="ms-hero__tint"></div>
 		<div class="ms-hero__inner wow fadeInLeftBig" style="visibility: visible; animation-name: fadeInLeftBig">
@@ -114,3 +154,56 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- <script type="text/javascript">
+	; (function ($) {
+		$(document).ready(function () {
+			function autoslider(swiperPaginationId, delaySpeed) {
+
+				var $swiperSlide = $('.event-slider__inner');
+				var paginationItems = document.getElementById(swiperPaginationId).getElementsByTagName("span");
+				var slideIndex = 1;
+				var delay = delaySpeed;
+
+				var autoSlide = setInterval(function () { nextSlide(1); }, delaySpeed);
+				var currentSlide;
+
+				//Creates continous advancement of slides
+				function nextSlide(n) {
+					showSlide(slideIndex += n);
+					clearInterval(autoSlide);
+					autoSlide = setInterval(function () { nextSlide(1); }, delaySpeed);
+				}
+
+				//Controls what happens when a user clicks the pagination or
+
+				function showSlide(n) {
+					var x = paginationItems;
+					if (n > x.length) { slideIndex = 1; }
+					//console.log(n);
+					$(x).mousedown(function (e) {
+						e.stopImmediatePropagation();
+						slideIndex = $(this).index();
+					});
+
+					//Controls what happens when a user clicks the slide swipe area
+					$swiperSlide.mousedown(function (e) {
+						e.stopImmediatePropagation();
+						// console.log("n " + slideIndex);
+						// console.log("slideIndex before "+slideIndex);
+						//slideIndex = $('.swiper-pagination-bullet-active').index();
+						clearInterval(autoSlide);
+						//autoSlide = setInterval(function() { nextSlide(slideIndex);}, delaySpeed);
+						//console.log(slideIndex);
+					});
+
+					if (n < 1) { slideIndex = x.length; }
+					$(x[slideIndex - 1]).trigger("click");
+
+				}
+			}
+			autoslider("upcoming-events", 3000);
+		});
+	})(jQuery);
+</script> -->
