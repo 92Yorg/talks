@@ -177,8 +177,82 @@
         color: #fff;
     }
 
-    .program-card__media {
+    .event-slider .program-card__media {
         width: 100%;
+        padding: 0;
+    }
+
+    .event-slider .program-card__prefix {
+        font-size: .875rem;
+    }
+
+    .event-slider .program-card__title {
+        font-size: 1.25rem;
+    }
+
+    .event-slider .program-card__title.program-card__title--long {
+        font-size: 1rem;
+    }
+
+    .event-slider .program-card__date-description {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 50em) {
+        .event-slider .flex-grid__item {
+            margin: 0;
+        }
+
+        .event-slider .program-card__media {
+            width: 100%;
+            padding-right: 6px;
+        }
+
+        .event-slider .program-card__prefix {
+            font-size: 1rem;
+        }
+
+        .event-slider .program-card__title {
+            font-size: 1.5rem;
+        }
+
+        .event-slider .program-card__title.program-card__title--long {
+            font-size: 1.25rem;
+        }
+
+        .event-slider .program-card__date-description {
+            font-size: 1rem;
+        }
+
+        .event-slider .program-card:not(.program-card--featured) {
+            flex-direction: row;
+        }
+        
+        .event-slider .program-card:not(.program-card--featured) .program-card__details {
+            flex: none;
+        }
+
+        .event-slider .program-card__actions {
+            visibility: unset;
+        }
+    }
+
+    @media (min-width: 70em) {
+        .event-slider .program-card__prefix {
+            font-size: 1rem;
+        }
+
+        .event-slider .program-card__title {
+            font-size: 2.25rem;
+        }
+
+        .event-slider .program-card__title.program-card__title--long {
+            font-size: 1.75rem;
+        }
+
+        .event-slider .program-card__date-description {
+            font-size: 1.125rem;
+        }
     }
 
     /* END STYLING FOR HOMEPAGE GRID TILE */
@@ -203,34 +277,6 @@
                 font-size: 2rem;
             }
             
-            #talks-announced .program-card:not(.program-card--featured) {
-                flex-direction: row;
-            }
-            
-            #talks-announced .program-card:not(.program-card--featured) .program-card__details {
-                flex: none;
-            }
-
-            #talks-announced .program-card__actions {
-                visibility: unset;
-            }
-
-            #talks-announced .program-card__prefix {
-                font-size: 1rem;
-            }
-
-            #talks-announced .program-card__title {
-                font-size: 2.25rem;
-            }
-
-            #talks-announced .program-card__title.program-card__title--long {
-                font-size: 1.75rem;
-            }
-
-            #talks-announced .program-card__date-description {
-                font-size: 1.125rem;
-            }
-
             #talks-guest .o-grid--2up li:nth-child(1) {
                 margin-right: 10%;
             }
@@ -240,7 +286,7 @@
             }
          }
 
-         @media (min-width: 70em) {
+        @media (min-width: 70em) {
             h1.u-txt-xl {
                 font-size: 5rem;
             }
