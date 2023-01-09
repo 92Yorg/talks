@@ -20,7 +20,11 @@
         font-size: 2rem;
     }
 
-    .talks-wrapper p {
+    #talks-guest .ms-hero__tint {
+        background: rgba(0,0,0,.75);
+    }
+
+    #talks-guest p {
         font-size: 1.125rem;
     }
 
@@ -58,7 +62,7 @@
         margin: 4em 2em;
     }
 
-    .event-slider .swiper-pagination {
+    /* .event-slider .swiper-pagination {
         position: static;
     }
     
@@ -72,14 +76,15 @@
     .event-slider .swiper-pagination-bullet-active {
         background: #fff;
         border: 1px solid #fff;
-    }
+    } */
 
     #talks-previous {
-        background-image: url('/92StreetY/media/img/Logos/92NY/talks-previous-events.svg');
+        /* background-image: url('/92StreetY/media/img/Logos/92NY/talks-previous-events.svg'); */
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10vw 0 4vw;
+        /* padding: 10vw 0 4vw; */
+        padding-bottom: 4vw;
     }
 
     #talks-previous .o-figure {
@@ -87,13 +92,13 @@
         border: 1px solid #000;
     }
 
-    #talks-previous .btn {
+    .previous-events-btn {
         background-color: var(--92nymagenta);
         border: 2px var(--92nymagenta) solid;
         color: #FFF;
     }
 
-    #talks-previous .btn:hover {
+    .previous-events-btn:hover {
         background-color: #000;
         border-color: #000;
     }
@@ -151,33 +156,127 @@
 
 
     /* START STYLING FOR HOMEPAGE GRID TILE */
-    #talks-announced .program-card {
+    .program-card {
         background-color: #000;
     }
 
-    #talks-announced .program-card .program-card__actions .btn {
-        border: 2px solid #fff;
-        padding: 16px 32px;
-        border-radius: 20px;
+    .program-card .program-card__actions .btn {
+        border: 1px solid #fff;
+        padding: 8px 16px;
+        border-radius: 10px;
         color: #fff;
     }
 
-    #talks-announced .program-card:hover .program-card__actions .btn {
+    .program-card:hover .program-card__actions .btn {
         background-color: inherit;
     }
 
-    #talks-announced .program-card .program-card__actions .btn:hover {
+    .program-card .program-card__actions .btn:hover {
         color: #000;
         background-color: #fff;
     }
 
-    #talks-announced .program-card__title,
-    #talks-announced .program-card__title a,
-    #talks-announced .program-card__body {
+    .program-card__title,
+    .program-card__title a,
+    .program-card__body {
         color: #fff;
     }
 
-    .event-slider .program-card__media {
+    .program-card:not(.program-card--featured) {
+        border: none;
+    }
+
+    .program-card:not(.program-card--featured) .program-card__details {
+        flex: none;
+    }
+
+    .program-card__media {
+        padding: 0;
+    }
+
+    .program-card:not(.program-card--featured) .program-card__media {
+        padding: 0;
+    }
+
+    .program-card__body {
+        padding: 0 15px;
+    }
+
+    @media (min-width: 50em) {
+        .flex-grid {
+            margin: 0 -20px;
+        }
+        .flex-grid__item {
+            width: calc(33.33% - 40px);
+            margin: 10px 20px 30px;
+        }
+        .program-card__body {
+            padding: 10px 0 0;
+        }
+        .program-card__prefix, .program-card__suffix {
+            font-size: 1rem;
+        }
+        .program-card__title.program-card__title--long {
+            font-size: 1.25rem;
+        }
+        .program-card__date-description {
+            font-size: 1rem;
+        }
+        .program-card__actions {
+            visibility: visible;
+        }
+        .program-card:hover .program-card__actions .btn {
+            color: inherit;
+        }
+    }
+
+    .events-slider.profile-panels--inverted .profile-panel {
+        border: none;
+        padding: 12px;
+    }
+
+    .events-slider .program-card {
+        background-color: #fff;
+    }
+
+    .events-slider .program-card .program-card__actions .btn {
+        border: 1px solid #000;
+        color: #000;
+        background: inherit;
+    }
+
+    .events-slider .program-card .program-card__actions .btn:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .events-slider .program-card__title,
+    .events-slider .program-card__title a,
+    .events-slider .program-card__body,
+    .events-slider .program-card:hover .program-card__title,
+    .events-slider .program-card:hover  .program-card__title a,
+    .events-slider .program-card:hover  .program-card__body,
+    .events-slider .program-card:hover  .program-card__body a {
+        color: #000;
+    }
+
+    .events-slider .swiper-container .swiper-button-next,
+    .events-slider .swiper-container .swiper-button-prev {
+        height: 100%;
+        top: 0;
+        margin: 0;
+    }
+
+    @media (max-width: 68.75em) {
+        .events-slider .swiper-slide .profile-panel {
+            padding: 0;
+        }
+    }
+
+
+    
+
+    /* .event-slider .program-card__media {
         width: 100%;
         padding: 0;
     }
@@ -253,7 +352,7 @@
         .event-slider .program-card__date-description {
             font-size: 1.125rem;
         }
-    }
+    } */
 
     /* END STYLING FOR HOMEPAGE GRID TILE */
 
@@ -273,7 +372,7 @@
                 font-size: 4rem;
             }
             
-            .talks-wrapper p {
+            #talks-guest p {
                 font-size: 2rem;
             }
             
