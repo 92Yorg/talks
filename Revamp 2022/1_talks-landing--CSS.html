@@ -24,7 +24,8 @@
         background: rgba(0,0,0,.75);
     }
 
-    #talks-guest p {
+    #talks-guest p,
+    #talks-more p {
         font-size: 1.125rem;
     }
 
@@ -182,6 +183,10 @@
         color: #fff;
     }
 
+    .program-card__title {
+        line-height: 1.2;
+    }
+
     .program-card:not(.program-card--featured) {
         border: none;
     }
@@ -202,13 +207,38 @@
         padding: 0 15px;
     }
 
+    .program-card__prefix {
+        font-weight: 400;
+    }
+
+    @media (max-width: 29.99em) {
+        .program-card:not(.program-card--featured) .program-card__body {
+            padding: 0 15px 10px;
+        }
+        .program-card:not(.program-card--featured) .program-card__actions {
+            padding-top: 6px;
+        }
+    }
+
+    @media (min-width: 30em) and (max-width: 31.5em) {
+        .program-card:not(.program-card--featured) .btn {
+            font-size: .675rem;
+        }
+    }
+
+    @media (max-width: 49.99em) {
+        .flex-grid__item {
+            margin-bottom: 30px;
+        }
+    }
+
     @media (min-width: 50em) {
         .flex-grid {
-            margin: 0 -20px;
+            margin: 0;
         }
         .flex-grid__item {
-            width: calc(33.33% - 40px);
-            margin: 10px 20px 30px;
+            width: calc(33.33% - 60px);
+            margin: 10px 30px 40px;
         }
         .program-card__body {
             padding: 10px 0 0;
@@ -230,9 +260,19 @@
         }
     }
 
+    @media (min-width: 72.5em) {
+        .flex-grid {
+            margin: 0 -30px;
+        }
+        .flex-grid__item {
+            width: calc(33.33% - 80px);
+            margin: 10px 40px 60px;
+        }
+    }
+
     .events-slider.profile-panels--inverted .profile-panel {
         border: none;
-        padding: 12px;
+        padding: 22px;
     }
 
     .events-slider .program-card {
@@ -372,7 +412,8 @@
                 font-size: 4rem;
             }
             
-            #talks-guest p {
+            #talks-guest p,
+            #talks-more p {
                 font-size: 2rem;
             }
             
